@@ -11,6 +11,5 @@
 @interface ViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIButton *changeTextButton;
 @property (weak, nonatomic) IBOutlet UITextField *customTextField;
-@property (weak, nonatomic) IBOutlet UILabel *helloLabel;
 
 @end

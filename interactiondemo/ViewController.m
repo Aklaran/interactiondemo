@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MapViewController.h"
 
 @interface ViewController ()
 
@@ -29,14 +30,19 @@
 - (IBAction)changeTextClick:(id)sender
 {
     NSString *customText = self.customTextField.text;
-    self.helloLabel.text = customText;
+    NSLog(@"customText %@",customText);
+    MapViewController* MapVC=[self.storyboard instantiateViewControllerWithIdentifier:@"MapViewController"];
+    MapVC.helloLabel.text = customText;
+    MapVC.labelString = customText;
     [self.customTextField resignFirstResponder];
+    [self.navigationController pushViewController:MapVC animated:YES];
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
 {
     [self.customTextField resignFirstResponder];
 }
+
 
 
 @end
