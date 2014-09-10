@@ -26,6 +26,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+// [NSArray arraywitharray:MyArray]; class method - lives in auto-release memory pool
+// [[NSArray alloc] initwithArray:MyArray]; instance method - destroyed when the call is finished (almost) ALWAYS USE
+//- (NSArray)initWithObjects:(id)firstObj,secondObj, thirdObj, nil
+//
 
 - (IBAction)changeTextClick:(id)sender
 {
