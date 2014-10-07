@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (strong, nonatomic) NSArray *testArray;
 @property (weak, nonatomic) IBOutlet UIButton *changeTextButton;
 @property (weak, nonatomic) IBOutlet UIButton *changeTextButton2;
 @property (weak, nonatomic) IBOutlet UIButton *changeTextButton3;
